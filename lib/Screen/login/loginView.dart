@@ -1,6 +1,8 @@
 import 'package:bivn_computer_status/Common/CommonColor.dart';
+import 'package:bivn_computer_status/Screen/Navigation/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart'; 
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -31,7 +33,6 @@ class _LoginScreenState extends State<LoginScreen> {
     _passwordController.dispose();
     super.dispose();
   }
-
   void _login() {
     if (_formKey.currentState!.validate()) {
       setState(() {
@@ -39,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
       });
 
       // Mô phỏng quá trình đăng nhập
-      Future.delayed(Duration(seconds: 2), () {
+      Future.delayed(Duration(seconds: 2), () async {
         setState(() {
           _isLoading = false;
         });
@@ -54,6 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         );
       });
+      context.go('/home');
     }
   }
 

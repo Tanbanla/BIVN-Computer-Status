@@ -28,7 +28,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
-      body: _currentBody,
+      body: Scaffold(),
       drawer: ComplexDrawer(changeBody: _changeBody, context: context),
       drawerScrimColor: Colors.transparent,
       backgroundColor: Colors.white,
