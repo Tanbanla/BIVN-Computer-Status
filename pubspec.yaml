@@ -45,7 +45,14 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
-
+  data_table_2: ^2.6.0
+  get: ^4.7.2
+  iconsax: ^0.0.8
+  http: ^1.4.0
+  easy_localization: ^3.0.8
+  fl_chart: ^1.0.0
+  excel: ^4.0.6
+  intl: ^0.20.2
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
