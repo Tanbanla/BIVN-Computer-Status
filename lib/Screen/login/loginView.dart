@@ -40,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
       });
 
       // Mô phỏng quá trình đăng nhập
-      Future.delayed(Duration(seconds: 2), () async {
+      Future.delayed(Duration(seconds: 1), () async {
         setState(() {
           _isLoading = false;
         });
@@ -54,8 +54,9 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
         );
+
+        context.go('/home');
       });
-      context.go('/home');
     }
   }
 
